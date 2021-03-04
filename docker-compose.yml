@@ -1,0 +1,11 @@
+---
+version: "3"
+
+services:
+  vault_app:
+    hostname: vault_app
+    container_name: vault_app
+    build:
+      context: .
+    env_file: .env
+    command: -n segredo1
